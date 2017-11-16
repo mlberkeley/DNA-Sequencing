@@ -1,0 +1,18 @@
+
+##### Memo Hawaii dataset #####
+
+The Next Generation Sequencer produced millions of DNA sequences (here called "reads").
+Similar reads were merged into one biologically correct unique sequence (here called "haplotype").
+Species boundary was difined based on sequence similarity (ABGD algorithm, Puillandre et al. 2012).
+It is expected that one species may have more than one haplotype, but some species have only one haplotype.
+
+# Variables
+order: (rough) taxonomic category
+status: native, invasive, or unknown
+mean.within: mean of within species genetic distance. If a species has only one haplotype, the mean is zero (i.e., no genetic distance within species)
+max.within: maximum of intra specific genetic distance
+n.haplo: number of haplotypes within species
+min.between: minimum of between species genetic distance (i.e., genetic distance to the closest neighbor species)
+reads: (rarefied) total number of reads in each species
+size: size category 1 (0 to 2mm), 2 (2 to 4mm), 3 (4 to 7mm), and 4 (larger than 7mm); thus this is "ordinal scale" (not quantitative variable)
+island: the number of islands that each species was sampled. Sampling was done in BigIsland, Maui, Oahu, Molokai, and Kauai.
